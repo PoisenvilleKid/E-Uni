@@ -1,0 +1,8 @@
+{
+  "name": "E-Uni",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PoisenvilleKid/E-Uni.git",
+  "author": "Cedric Mathis <clmathis@uh.edu>",
+  "license": "MIT"
+}
