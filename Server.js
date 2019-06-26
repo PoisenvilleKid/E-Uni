@@ -1,9 +1,11 @@
 import express from 'express';
+import path from 'path';
 
-const app = express();
+
+let app = express();
 
 app.get('/', function (req, res) {
- res.send('Hello World!')
+ res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 let port = 3000;
