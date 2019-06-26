@@ -6,7 +6,8 @@ let Schema = mongoose.Schema;
 
 /* Define The Schema for a User in E-Uni that will have the following fields.
    Username, Phone Number, Email, and Events array will be unique to each user
-   We will specify whether or not they are an admin or not */
+   We will specify whether or not they are an admin or not 
+*/
 let userSchema = new Schema({
     username: {
         type:String,
@@ -45,7 +46,7 @@ let userSchema = new Schema({
         type:String,
         required:true
     },
-    Events: {
+    events: {
         type: [Event],
         required:true
     }

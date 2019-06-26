@@ -3,6 +3,8 @@ import mongoose from 'express';
 
 let schema = new mongoose.schema;
 
+/* Define The Schema we will use for an Event As the 
+   Program Scales We take different types into ConsiderationS*/
 let eventSchema = new schema({
     date: {
         type: Date,
@@ -28,7 +30,7 @@ let eventSchema = new schema({
         type:String,
         required: true
     },
-    Location: {
+    location: {
         type: String,
         required: true
     }
