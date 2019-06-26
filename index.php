@@ -112,14 +112,3 @@
 </div>
 </body>
 </html>
-
-<?php
-
-$user = 'root';
-$pass = '';
-$db = 'test_1';
-
-$db = new mysqli('localhost',$user, $pass, $db) or die("Failed to connect");
-
-
-?>
