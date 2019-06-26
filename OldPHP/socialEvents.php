@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Event Software</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 20px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        
+      </style>
+</head>
+<body>
+        <ul>
+                <li><a href="me.html">Events for me</a></li>
+                <li><a href="organizations.html">Organizations</a></li>
+                <li><a href="meetups.html">Meetups</a></li>
+                <li><a href="socialEvents.html" class="active">Social Events</a></li>
+                <li><a href="foodieFriends.html">Foodie Friends</a></li>
+                <li><a href="login.html">Logout</a></li>
+        </ul>
+        <table>
+                <thead>
+                        <tr>
+                                <th>
+                                        Date
+                                </th>
+                                <th>
+                                        Time
+                                </th>
+                                <th>
+                                        Event Name
+                                </th>
+                                <th>
+                                        Event Description
+                                </th>
+                                <th>
+                                        Event Host
+                                </th>
+                                <th>
+                                        Event Type
+                                </th>
+                                <th>
+                                        Location
+                                </th>
+                        </tr>
+                </thead>
+        </table>
+</body>
+</html>
