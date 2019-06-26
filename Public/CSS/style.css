@@ -40,7 +40,9 @@ li
 	width:700;
 	margin:30px auto;
 }*/
-{box-sizing: border-box}
+box {
+  box-sizing: border-box
+}
 
 /* Add padding to containers */
 .container {
