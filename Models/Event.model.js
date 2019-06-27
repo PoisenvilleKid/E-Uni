@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 
 
 /* Define The Schema we will use for an Event As the 
-   Program Scales We take different types into ConsiderationS*/
+   Program Scales We take different types into ConsiderationS
+*/
 const eventSchema = new mongoose.Schema({
     date: {
         type: Date,
