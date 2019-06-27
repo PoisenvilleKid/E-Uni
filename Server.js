@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import router from './Routes/index.js';
 //import {connectDB} from './Models/index.js'
-import models from '.Models/index.js'; 
+import models from './Models/index.js'; 
 
 let app = express();
 

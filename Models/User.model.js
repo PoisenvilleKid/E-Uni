@@ -1,14 +1,14 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import Event from './User.model';
+import Event from './Event.model.js';
 
-let Schema = mongoose.Schema;
+let ObjectID = mongoose.SchemaTypes.ObjectID;
 
 /* Define The Schema for a User in E-Uni that will have the following fields.
    Username, Phone Number, Email, and Events array will be unique to each user
    We will specify whether or not they are an admin or not 
 */
-let userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type:String,
         required: true,
@@ -47,9 +47,9 @@ let userSchema = new Schema({
         required:true
     },
     events: {
-        type: [Event],
-        required:true
-    }
+        type: [String],
+        required: true
+    },
 });
 
 // Give our Schema a Variable to call CRUD operations on

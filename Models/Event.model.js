@@ -1,11 +1,10 @@
 import express from 'express';
-import mongoose from 'express';
+import mongoose from 'mongoose';
 
-let schema = new mongoose.schema;
 
 /* Define The Schema we will use for an Event As the 
    Program Scales We take different types into ConsiderationS*/
-let eventSchema = new schema({
+const eventSchema = new mongoose.Schema({
     date: {
         type: Date,
         required: true
@@ -33,11 +32,11 @@ let eventSchema = new schema({
     location: {
         type: String,
         required: true
-    }
-})
+    },
+});
 
 // Give our Schema a Variable to call CRUD operations on
-let Event = mongoose.model('User', eventSchema);
+let Event = mongoose.model('Event', eventSchema);
 
 // Make an Event object available to the Program
 export default Event;
