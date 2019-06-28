@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-
 // Connect Mongoose to our URL and DB which is E-Uni
 // In this scenario ***change last endpoint for other DB's***
 mongoose.connect("mongodb://localhost:27017/E-Uni", { useNewUrlParser: true });
